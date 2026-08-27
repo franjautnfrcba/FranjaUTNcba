@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franja Morada UTN FRC - Portal Oficial</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Íconos de FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <i class="fa-solid fa-shapes brand-icon"></i>
+      <span class="brand-title">FRANJA <span class="brand-accent">UTN FRC</span></span>
+    </div>
+    <div class="nav-links">
+      <button class="nav-btn active" data-tab="inicio"><i class="fa-solid fa-house"></i> Inicio </button>
+      <button class="nav-btn" data-tab="dudas"><i class="fa-solid fa-circle-question"></i> Ingresantes</button>
+      <button class="nav-btn" data-tab="preguntas-generales"><i class="fa-solid fa-clipboard-question"></i> Preguntas Generales</button>
+      <button class="nav-btn" data-tab="cursos"><i class="fa-solid fa-graduation-cap"></i> Cursos</button>
+      <button class="nav-btn" data-tab="visitas"><i class="fa-solid fa-industry"></i> Visitas Técnicas</button>    
+      <button class="nav-btn" data-tab="nosotros"><i class="fa-solid fa-users"></i> Nosotros</button>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- SECCIÓN 1: INICIO / INFO DEL DÍA -->
+    <section id="inicio" class="tab-section active">
+
+      <!-- CARRUSEL DE IMÁGENES LIMPIO -->
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <!-- Slide 1 -->
+          <div class="carousel-slide active">
+            <img src="https://lh3.googleusercontent.com/d/19gRofp8vYVuT2rYfkfZvmeIxSVMFr-ty" alt="Foto 1">
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <img src="https://lh3.googleusercontent.com/d/1Q9fEQNWreTO7WcBHL4gY0zpB0Hd0qc8I" alt="Foto 2">
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <img src="https://lh3.googleusercontent.com/d/1NqVdwscXS88FvVojILT7_u4RimUB_oQi" alt="Foto 3">
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-slide">
+            <img src="https://lh3.googleusercontent.com/d/1ia-1jGw2PdyOaEOefCrZjMiVyRMwCbcQ" alt="Foto 4">
+          </div>
+        </div>
+
+        <!-- Controles de navegación -->
+        <button class="carousel-btn prev-btn" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn next-btn" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <!-- Indicadores (puntos) -->
+        <div class="carousel-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+        </div>
+      </div>
+
+      <!-- TÍTULO DE NOVEDADES -->
+      <header class="section-hero">
+        <h1>Novedades e Información del Día</h1>
+        <p class="hero-subtitle">Mantenete al tanto de los últimos avisos, fechas de exámenes y trámites académicos.</p>
+      </header>
+
+      <!-- GRID DE NOVEDADES -->
+      <div class="news-grid">
+        <!-- Noticia / Aviso 1 -->
+        <article class="news-card">
+          <div class="card-tag">Aviso Importante</div>
+          <h3>Preinscripciones y Cursillo 2027</h3>
+          <p>Se confirmaron los periodos de preinscripción para las carreras de grado de la UTN FRC. Recordá chequear la documentación obligatoria.</p>
+          <div class="card-footer">
+            <span class="date"><i class="fa-regular fa-calendar"></i> Actualizado hoy</span>
+            <a href="#" class="btn-read"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Noticia / Aviso 2 -->
+        <article class="news-card">
+          <div class="card-tag tag-pink">Apuntes</div>
+          <h3>Biblioteca Morada</h3>
+          <p>Volvimos con nuestra bibilioteca virtual, queremos compartir con los estudiantes ejercicios, resumenes, parciales y finales de las materias.</p>
+          <div class="card-footer">
+            <span class="date"><i class="fa-regular fa-calendar"></i> Activo</span>
+            <a href="https://drive.google.com/drive/folders/1WcYUg1baFYI-nsPJaVc-GjqHhzWAR5iB?usp=sharing" class="btn-read"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+
+        <!-- Noticia / Aviso 3 -->
+        <article class="news-card">
+          <div class="card-tag tag-purple">Trámites</div>
+          <h3>Trámite de Boleto Educativo</h3>
+          <p>Segui los pasos para gestionar a través de autogestión el boleto educativo y acceder a los beneficios universitarios.</p>
+          <div class="card-footer">
+            <span class="date"><i class="fa-regular fa-calendar"></i> Trámite permanente</span>
+            <a href="boleto.html" class="btn-read"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- SECCIÓN 2: DUDAS FIJAS / PREGUNTAS Y PROPUESTAS -->
+    <section id="dudas" class="tab-section">
+      <header class="section-hero">
+        <span class="badge-pill pill-pink">Preguntas Frecuentes</span>
+        <h1>Preguntas generales de ingresantes</h1>
+        <p class="hero-subtitle">Seleccioná una duda del panel izquierdo para ver la respuesta detallada en el panel derecho.</p>
+      </header>
+
+      <div class="faq-layout">
+        <!-- Panel Izquierdo: Lista de Preguntas Seleccionables -->
+        <div class="faq-sidebar">
+          
+          <!-- Pregunta 1 -->
+          <button class="faq-nav-item active" data-target="faq-1">
+            <div class="faq-nav-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Cómo funciona la preinscripción al ingreso?</h4>
+              <small>Tips para tener en cuenta</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <!-- Pregunta 2 -->
+          <button class="faq-nav-item" data-target="faq-2">
+            <div class="faq-nav-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Cuáles son los turnos del Seminario Universitario?</h4>
+              <small>Horarios de cursada (Mañana, Tarde, Noche)</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <!-- Pregunta 3 -->
+          <button class="faq-nav-item" data-target="faq-3">
+            <div class="faq-nav-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Cómo ingresar a autogestión y al aula virtual?</h4>
+              <small>Acceso al usuario, contraseña y dominio</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <!-- Pregunta 4 -->
+          <button class="faq-nav-item" data-target="faq-4">
+            <div class="faq-nav-icon"><i class="fa-solid fa-route"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Qué oportunidades tengo para ingresar a ingeniería?</h4>
+              <small>Instancias de diciembre, verano y julio</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <!-- Pregunta 5 -->
+          <button class="faq-nav-item" data-target="faq-5">
+            <div class="faq-nav-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Qué materias tengo que aprobar para ingresar?</h4>
+              <small>Matemática, Física e IVU</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <!-- Pregunta 6 -->
+          <button class="faq-nav-item" data-target="faq-6">
+            <div class="faq-nav-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Qué apoyo ofrece Franja durante el año?</h4>
+              <small>Tutorías, simulacros y material digital</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <!-- Pregunta 7 -->
+          <button class="faq-nav-item" data-target="faq-7">
+            <div class="faq-nav-icon"><i class="fa-solid fa-book-open"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Qué son los Exámenes Libres de diciembre?</h4>
+              <small>Instancia de filtro virtual y presencial</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <!-- Pregunta 8 (Nueva) -->
+          <button class="faq-nav-item" data-target="faq-8">
+            <div class="faq-nav-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Qué me falta para completar la inscripción?</h4>
+              <small>Aprobación del ingreso, turno y documentación</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <!-- Pregunta 9 (Nueva) -->
+          <button class="faq-nav-item" data-target="faq-9">
+            <div class="faq-nav-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Cómo sacar turno para entregar documentos?</h4>
+              <small>Paso a paso en Autogestión 4 y presentación</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+        </div>
+
+        <!-- Panel Derecho: Visor de Respuestas -->
+        <div class="faq-content-viewer">
+          
+          <!-- Respuesta 1 -->
+          <div class="faq-answer-card active" id="faq-1">
+            <div class="badge-tag">Ingreso y Trámites</div>
+            <h2>¿Cómo funciona la preinscripción al ingreso?</h2>
+            <div class="answer-body">
+              <p>La preinscripción se lleva a cabo de manera 100% virtual a través del portal oficial de la facultad (<strong>www.frc.utn.edu.ar</strong>).</p>
+              <div class="highlight-box">
+                <i class="fa-solid fa-circle-info"></i>
+                <div>
+                  <strong>Recuerden tener en cuenta:</strong>
+                  <ul>
+                    <li>Usa un mail al que tengas acceso (el que tenés en tu celu o uno que no te olvides la contraseña) y en lo posible personal.</li>
+                    <li>El turno elegido durante la preinscripción es el horario en que vas a cursar tus clases durante enero-marzo.</li>
+                    <li>En caso de que quieras cambiar a otra ingeniería, ese trámite se va a permitir recién en marzo del 2027.</li>
+                    <li>El cursillo se considera aprobado SOLO cuando se aprueban las 3 materias (Matemática, Física e Introducción a la Vida Universitaria).</li>
+                  </ul>
+                </div>
+              </div>
+              <p>Una vez completados tus datos te va a llegar un mail con tu usuario y contraseña para ingresar a autogestión. ¡Asegurate que llegue porque sin esos datos no podés confirmar tu preinscripción!</p>
+            </div>
+          </div>
+
+          <!-- Respuesta 2: Turnos -->
+          <div class="faq-answer-card" id="faq-2">
+            <div class="badge-tag tag-purple">Cursado</div>
+            <h2>¿Cuáles son los turnos del Seminario Universitario?</h2>
+            <div class="answer-body">
+              <p>El cursillo se dicta de manera presencial en la sede de la UTN FRC. Los horarios asignados corresponden al turno elegido en la preinscripción:</p>
+              <div class="schedule-grid">
+                <div class="schedule-item"><strong>Turno Mañana:</strong> 08:00 a 12:00 hs</div>
+                <div class="schedule-item"><strong>Turno Tarde:</strong> 13:00 a 17:00 hs</div>
+                <div class="schedule-item"><strong>Turno Noche:</strong> 18:00 a 22:00 hs</div>
+              </div>
+              <p>Los exámenes parciales y recuperatorios se rinden estrictamente en el mismo turno seleccionado.</p>
+            </div>
+          </div>
+
+          <!-- Respuesta 3: Autogestión -->
+          <div class="faq-answer-card" id="faq-3">
+            <div class="badge-tag tag-pink">Plataformas Virtuales</div>
+            <h2>¿Cómo ingresar a autogestión y al aula virtual?</h2>
+            <div class="answer-body">
+              <p>
+                Para ingresar, accedé a la página oficial de la facultad (<strong>www.frc.utn.edu.ar</strong>), dirigite a la sección <strong>"Mi Facu"</strong> en el menú superior y seleccioná <strong>"Autogestión"</strong> en el menú desplegable.
+              </p>
+              
+              <div class="highlight-box box-purple">
+                <i class="fa-solid fa-key"></i>
+                <div>
+                  <p><strong>Completá los campos como se muestra en la imagen:</strong></p>
+                  <ul>
+                    <li><strong>Usuario:</strong> Tu número de legajo enviado por mail.</li>
+                    <li><strong>Dominio:</strong> Seleccioná la ingeniería en la que te inscribiste (ej: <em>industrial</em>, <em>sistemas</em>, <em>química</em>, etc.).</li>
+                    <li><strong>Contraseña:</strong> La clave enviada a tu correo electrónico.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Imagen explicativa -->
+              <div class="faq-image-container">
+                <img src="https://lh3.googleusercontent.com/d/1Oom_goDA4CCmyjv6dd8AshSMgRBgF_qs" alt="Pantalla de inicio de sesión de Autogestión UTN" class="faq-guide-img">
+                <span class="img-caption">Vista del panel de acceso a Autogestión 4</span>
+              </div>
+              
+              <p class="mt-2">Una vez dentro, también podrás acceder directamente a la <strong>UV (Universidad Virtual / Moodle)</strong> con la misma cuenta.</p>
+            </div>
+          </div>
+
+          <!-- Respuesta 4: Oportunidades de ingreso -->
+          <div class="faq-answer-card" id="faq-4">
+            <div class="badge-tag tag-pink">Instancias de Ingreso</div>
+            <h2>¿Qué oportunidades tengo para ingresar a ingeniería?</h2>
+            <div class="answer-body">
+              <p>La facultad dispone de múltiples instancias para que puedas ingresar a la carrera:</p>
+              
+              <div class="highlight-box">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <ul>
+                    <li>
+                      <strong>1. Primera Instancia (Diciembre - Examen Libre):</strong> Te preparás por tu cuenta y venís directamente a la facultad a rendir. Podés presentarte a una, dos o a las tres materias, según te sientas preparado.
+                    </li>
+                    <li>
+                      <strong>2. Segunda Instancia (Cursillo de Nivelación de Verano):</strong> Dictado de forma presencial por los docentes de la facultad. Asistís a clases, rendís un parcial por cada materia y, en caso de no alcanzar la nota, tenés derecho a su respectivo recuperatorio.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Imagen del cronograma de ingreso -->
+              <div class="faq-image-container">
+                <img src="https://lh3.googleusercontent.com/d/1YZOnsgfZOPJw3A5FQg4Z4N2P_41OHoeL" alt="Cronograma de ingreso" class="faq-guide-img">
+                <span class="img-caption">Cronograma de cursado y exámenes del ingreso</span>
+              </div>
+
+              <div class="highlight-box box-purple">
+                <i class="fa-solid fa-calendar-days"></i>
+                <div>
+                  <p>
+                    <strong>3. Tercera Instancia (Julio 2027 - Examen Libre):</strong> Examen libre extra para rendir la/s materia/s que te hayan quedado pendientes. Si las aprobás, comenzás a cursar las materias de la carrera en el segundo semestre. <em>(Nota: esta instancia solo está habilitada para quienes hayan cursado el seminario de nivelación).</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Respuesta 5: Materias obligatorias -->
+          <div class="faq-answer-card" id="faq-5">
+            <div class="badge-tag tag-purple">Plan de Ingreso</div>
+            <h2>¿Qué materias tengo que aprobar para poder ingresar a ingeniería?</h2>
+            <div class="answer-body">
+              <p>Para ingresar efectivamente a tu carrera de ingeniería y poder inscribirte al cursado de las materias de primer año, tenés que <strong>APROBAR SÍ O SÍ</strong> las 3 materias del ingreso:</p>
+
+              <div class="highlight-box box-purple">
+                <i class="fa-solid fa-list-check"></i>
+                <div>
+                  <ul>
+                    <li><strong>Matemática</strong></li>
+                    <li><strong>Física</strong></li>
+                    <li><strong>Introducción a la Vida Universitaria (IVU)</strong></li>
+                  </ul>
+                </div>
+              </div>
+
+              <p>Podés aprobarlas en cualquiera de las instancias oficiales que dispone la facultad (diciembre libre, cursillo de verano con sus recuperatorios, o la instancia libre de julio).</p>
+            </div>
+          </div>
+
+          <!-- Respuesta 6: Apoyo de Franja -->
+          <div class="faq-answer-card" id="faq-6">
+            <div class="badge-tag">Propuestas & Acompañamiento</div>
+            <h2>¿Qué apoyo ofrece Franja durante el año?</h2>
+            <div class="answer-body">
+              <p>Desde Franja te acompañamos en cada etapa de tu ingreso con herramientas y espacios pensados para vos:</p>
+              
+              <div class="highlight-box">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                  <p><strong>Precursillo Virtual y Asincrónico:</strong></p>
+                  <p>Ideal si querés presentarte a rendir libre en diciembre, vivís lejos o necesitás una mano extra para organizar tus estudios a tu propio ritmo.</p>
+                </div>
+              </div>
+
+              <div class="highlight-box box-purple">
+                <i class="fa-solid fa-video"></i>
+                <div>
+                  <p><strong>Clases Grabadas en YouTube y Twitch:</strong></p>
+                  <p>En nuestros canales vas a encontrar todas las clases grabadas del precursillo del año anterior, y a través de <strong>YouTube</strong> iremos subiendo las clases de este año para que repases cuando quieras.</p>
+                </div>
+              </div>
+
+              <p><strong>Recursos y canales de comunicación:</strong></p>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px;">
+                
+                <!-- Botón: Comunidad de WhatsApp -->
+                <a href="https://chat.whatsapp.com/KgpUupHF9ZdC6aFcsK4Im6" target="_blank" class="btn-register" style="justify-content: center; background-color: #25d366; color: #ffffff;">
+                  <i class="fa-brands fa-whatsapp"></i> Sumarme a la Comunidad de Ingresantes
+                </a>
+
+                <!-- Botón: Carpeta de Material y Exámenes -->
+                <a href="https://drive.google.com/drive/folders/14DjcaUqcr-L3iEyiZPZ_9iLpgtD18ep8?usp=drive_link" target="_blank" class="btn-register" style="justify-content: center; background-color: var(--color-purple);">
+                  <i class="fa-solid fa-folder-open"></i> Descargar Material y Exámenes Anteriores
+                </a>
+
+                <!-- Botones: YouTube y Twitch -->
+                <div style="display: flex; gap: 10px;">
+                  <a href="https://www.youtube.com/playlist?reload=9&list=PL4ltBb8n8IgycRpC38yy3FfWPANe1FpgC" target="_blank" class="btn-register" style="flex: 1; justify-content: center; background-color: #ff0000; color: #ffffff;">
+                    <i class="fa-brands fa-youtube"></i> Canal de YouTube
+                  </a>
+                  <a href="https://www.twitch.tv/franjamoradafrc" target="_blank" class="btn-register" style="flex: 1; justify-content: center; background-color: #9146ff; color: #ffffff;">
+                    <i class="fa-brands fa-twitch"></i> Canal de Twitch
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Respuesta 7: Exámenes Libres de diciembre -->
+          <div class="faq-answer-card" id="faq-7">
+            <div class="badge-tag tag-pink">Instancia Opcional</div>
+            <h2>¿Qué son los Exámenes Libres de diciembre?</h2>
+            <div class="answer-body">
+              <p>Es una instancia no obligatoria dirigida a quienes se consideran listos para rendir las materias del ingreso sin cursar el seminario de verano.</p>
+              <div class="highlight-box box-purple">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p><strong>Cuestionario Virtual Filtro:</strong> Se debe aprobar una evaluación online previa para estar habilitado al examen presencial libre en la facultad.</p>
+              </div>
+              <p>Las materias evaluadas son <strong>Matemática</strong>, <strong>Física</strong> e <strong>Introducción a la Vida Universitaria</strong> (se aprueba con 6 o más en cada una).</p>
+            </div>
+          </div>
+
+          <!-- Respuesta 8: Completar Inscripción -->
+          <div class="faq-answer-card" id="faq-8">
+            <div class="badge-tag tag-purple">Ingreso a Carreras de Grado</div>
+            <h2>¿Qué me falta para completar la inscripción?</h2>
+            <div class="answer-body">
+              
+              <!-- Alerta obligatoria de aprobación -->
+              <div class="highlight-box" style="border-left-color: #ef4444; background: #fef2f2;">
+                <i class="fa-solid fa-triangle-exclamation" style="color: #ef4444;"></i>
+                <div>
+                  <strong style="color: #991b1b;">Condición indispensable:</strong>
+                  <p style="margin: 0; color: #b91c1c;">
+                    <strong>SÍ O SÍ debes haber aprobado las 3 materias del cursillo de ingreso</strong> para poder continuar con el siguiente paso, que es la entrega presencial de documentación para formalizar tu inscripción definitiva a la carrera de ingeniería en la UTN FRC.
+                  </p>
+                </div>
+              </div>
+
+              <p style="margin-top: 16px;">
+                Una vez aprobado el ingreso, deberás <strong>solicitar un turno web</strong> en Autogestión 4 y presentarte el día y horario fijado en la <strong>Oficina de Alumnos (Primer piso - Edificio Central)</strong> con los siguientes requisitos:
+              </p>
+
+              <!-- Lista completa de Documentación -->
+              <h3 style="margin-top: 22px; font-size: 1.15rem; color: #1f2937;">
+                <i class="fa-solid fa-folder-open"></i> Documentación obligatoria a presentar:
+              </h3>
+
+              <ul style="padding-left: 20px; line-height: 1.7; margin-bottom: 16px;">
+                <li><strong>Copia del DNI.</strong></li>
+                <li><strong>Constancia de CUIL.</strong></li>
+                <li><strong>Copia de la partida de nacimiento.</strong></li>
+                <li><strong>Recibo de compra de la Libreta de Trabajos Prácticos</strong> adquirida en ATECOR (código 34).</li>
+                <li>
+                  <strong>Copia del Certificado Analítico de estudios secundarios completos:</strong> Debe estar autenticada por el colegio emisor o presentar el original ante quien realice la atención para verificar la validez de la fotocopia. Si el certificado fue emitido en formato digital, imprimirlo en hoja A4 doble faz.
+                </li>
+              </ul>
+
+              <!-- Opciones temporales del secundario -->
+              <div class="highlight-box box-purple">
+                <i class="fa-solid fa-file-lines"></i>
+                <div>
+                  <strong>¿Qué presentar si aún no tenés el Analítico Definitivo?</strong>
+                  <p style="margin-top: 6px;">
+                    En caso de no contar todavía con el certificado analítico, podés presentar de forma temporal:
+                  </p>
+                  <ul style="margin-top: 4px; padding-left: 18px;">
+                    <li><strong>Certificado de título secundario en trámite</strong>, o</li>
+                    <li><strong>Constancia de no adeudar materias</strong> del secundario (con sello, firma de la institución y fecha de egreso).</li>
+                  </ul>
+                  <p style="margin-top: 6px; font-size: 0.9rem; color: #6b21a8;">
+                    <em>Nota: Estas constancias tienen una validez de dos meses.</em>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Consideración importante: Fecha límite 31 de agosto -->
+              <div class="highlight-box" style="border-left-color: #f59e0b; background: #fffbeb;">
+                <i class="fa-solid fa-calendar-xmark" style="color: #d97706;"></i>
+                <div>
+                  <strong style="color: #92400e;">Consideración importante (Plazo límite):</strong>
+                  <p style="margin: 0; color: #b45309;">
+                    Quienes no finalicen los estudios secundarios o <strong>no presenten toda la documentación definitiva antes del 31 de agosto</strong> del año en curso, perderán la inscripción provisoria. Para ingresar al año siguiente deberán realizar nuevamente el Seminario Universitario o solicitar la eximición del cursillo.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Respuesta 9: Sacar Turno (Nueva) -->
+          <div class="faq-answer-card" id="faq-9">
+            <div class="badge-tag tag-pink">Trámites Presenciales</div>
+            <h2>¿Cómo sacar turno para entregar documentos?</h2>
+            <div class="answer-body">
+              <p>El turno se gestiona a través del sistema de Autogestión siguiendo estos pasos:</p>
+
+              <ol style="padding-left: 20px; line-height: 1.7; margin-bottom: 16px;">
+                <li>Ingresá a tu cuenta de <strong>Autogestión 4</strong>.</li>
+                <li>En el menú lateral, hacé clic en la opción <strong>"Trámites"</strong>.</li>
+                <li>Seleccioná <strong>"Turno Presentación de Documentación"</strong> y elegí la fecha y hora disponible.</li>
+                <li>
+                  El día asignado, presentate con la documentación en la <strong>Oficina de Alumnos</strong> (Primer piso – Edificio Central).
+                </li>
+              </ol>
+
+              <!-- Espacio para las 2 imágenes -->
+              <div class="faq-image-container" style="display: flex; flex-direction: column; gap: 16px; margin: 20px 0;">
+                <div>
+                  <img src="COLOCA_AQUI_LINK_IMAGEN_1" alt="Paso a paso en Autogestión 4" class="faq-guide-img">
+                  <span class="img-caption">Paso a paso en Autogestión 4: Trámites > Turno Presentación Documentación</span>
+                </div>
+
+                <div>
+                  <img src="COLOCA_AQUI_LINK_IMAGEN_2" alt="Presentación en Oficina de Alumnos" class="faq-guide-img">
+                  <span class="img-caption">Lugar de entrega: Oficina de Alumnos (1° Piso - Edificio Central)</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- SECCIÓN 3: PREGUNTAS GENERALES -->
+    <section id="preguntas-generales" class="tab-section">
+      <header class="section-hero">
+        <span class="badge-pill">Información Académica y Servicios</span>
+        <h1>Preguntas Generales</h1>
+        <p class="hero-subtitle">Consultas frecuentes sobre el régimen de cursado, trámites y servicios de la facultad.</p>
+      </header>
+
+      <div class="faq-layout">
+        <!-- Panel Izquierdo: Lista de Preguntas -->
+        <div class="faq-sidebar">
+          
+          <button class="faq-nav-item active" data-target="gen-1">
+            <div class="faq-nav-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Qué condición académica puedo tener?</h4>
+              <small>Regular, Libre y Aprobación Directa</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <button class="faq-nav-item" data-target="gen-2">
+            <div class="faq-nav-icon"><i class="fa-solid fa-hourglass-end"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿La regularidad se cae o vence?</h4>
+              <small>Vigencia de la condición regular</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <button class="faq-nav-item" data-target="gen-3">
+            <div class="faq-nav-icon"><i class="fa-solid fa-calendar-days"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Qué es un ciclo lectivo?</h4>
+              <small>Conteo de las 10 mesas de examen</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <button class="faq-nav-item" data-target="gen-4">
+            <div class="faq-nav-icon"><i class="fa-solid fa-square-parking"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Cómo funciona el estacionamiento?</h4>
+              <small>Registro de matrícula, cobro y ATECOR</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <button class="faq-nav-item" data-target="gen-5">
+            <div class="faq-nav-icon"><i class="fa-solid fa-utensils"></i></div>
+            <div class="faq-nav-text">
+              <h4>Comedor Universitario</h4>
+              <small>Costos, menú y horarios de atención</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <button class="faq-nav-item" data-target="gen-6">
+            <div class="faq-nav-icon"><i class="fa-solid fa-file-signature"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿La promoción práctica se vence?</h4>
+              <small>Duración y ciclos lectivos según la materia</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <button class="faq-nav-item" data-target="gen-7">
+            <div class="faq-nav-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Cómo inscribirse a un examen final?</h4>
+              <small>Tutorial, plazos (48 hs hábiles) y comprobante</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <button class="faq-nav-item" data-target="gen-8">
+            <div class="faq-nav-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Cómo sé qué fecha rindo un final?</h4>
+              <small>Consulta de turnos y fechas en autogestión</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+          <button class="faq-nav-item" data-target="gen-9">
+            <div class="faq-nav-icon"><i class="fa-solid fa-user-xmark"></i></div>
+            <div class="faq-nav-text">
+              <h4>¿Qué pasa si me anoto a un final y no voy?</h4>
+              <small>Condición de ausente y consecuencias</small>
+            </div>
+            <i class="fa-solid fa-chevron-right chevron"></i>
+          </button>
+
+        </div>
+
+        <!-- Panel Derecho: Visor de Respuestas -->
+        <div class="faq-content-viewer">
+          
+          <!-- Respuesta 1: Condiciones académicas -->
+          <div class="faq-answer-card active" id="gen-1">
+            <div class="badge-tag">Régimen de Cursado</div>
+            <h2>¿Qué condición académica puedo tener?</h2>
+            <div class="answer-body">
+              <p>Al cursar una materia podés alcanzar una de las <strong>3 condiciones académicas</strong> según tus calificaciones en parciales y trabajos prácticos:</p>
+              
+              <div class="highlight-box">
+                <i class="fa-solid fa-circle-info"></i>
+                <div>
+                  <ul>
+                    <li><strong>Regular:</strong> Aprobás los parciales prácticos con la nota mínima requerida (generalmente 4 o más pero consultar con los profes de la materia las condiciones) y sin aprobar los parciales teóricos. Te habilita a rendir el examen final de la materia.</li>
+                    <li><strong>Promoción Práctica:</strong> Apróbas los parciales prácticos con nota 6 o más (consultar las condiciones de aprobación al comienzo del cursado) pero sin aprobar la parte teórica de la materia. Rendís solo la parte teórica en el examen final.</li>
+                    <li><strong>Aprobación Directa (Promoción total):</strong> Alcanzás notas destacadas tanto en la parte práctica como en la teórica (usualmente 8 o más). La materia queda aprobada sin necesidad de rendir examen final.</li>
+                    <li><strong>Libre:</strong> Ocurre cuando no alcanzás la nota mínima en los parciales o quedás sin asistencia suficiente. Debés recursar la materia o rendirla en condición de examen libre si es que se permite.</li>
+                  </ul>
+                </div>
+              </div>
+              <p>¡Consultar con el profesor al inicio de cursada las notas requeridas para cada condición! Las notas mencionadas son relativas y no engloban a todas las materias.</p>
+            </div>
+          </div>
+
+          <!-- Respuesta 2: Vencimiento de regularidad -->
+          <div class="faq-answer-card" id="gen-2">
+            <div class="badge-tag tag-pink">Reglamento UTN</div>
+            <h2>¿La regularidad se cae o vence?</h2>
+            <div class="answer-body">
+              <div class="highlight-box box-purple">
+                <i class="fa-solid fa-circle-check"></i>
+                <p><strong>La regularidad en la UTN nunca se vence.</strong></p>
+              </div>
+              <p>Una vez que alcanzás la condición de <strong>regular</strong> en una materia, conservás ese derecho de forma permanente para rendir el examen final en las mesas habilitadas, sin fecha límite de vencimiento.</p>
+            </div>
+          </div>
+
+          <!-- Respuesta 3: Ciclo Lectivo -->
+          <div class="faq-answer-card" id="gen-3">
+            <div class="badge-tag tag-purple">Calendario Académico</div>
+            <h2>¿Qué es un ciclo lectivo?</h2>
+            <div class="answer-body">
+              <p>Un <strong>ciclo lectivo</strong> en la facultad equivale a un total de <strong>10 mesas de examen final</strong>.</p>
+              <div class="highlight-box">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p>No se cuenta necesariamente de enero a diciembre de corrido: empieza a computarse a partir de la <strong>primera mesa de examen disponible</strong> tras finalizar el cursado de la materia.</p>
+              </div>
+
+              <!-- Imagen de ejemplo del calendario -->
+              <div class="faq-image-container">
+                <img src="https://lh3.googleusercontent.com/d/1PgMsXzKhwl-IAL7IPZqpw1q9z-SueFgS" alt="Ejemplo de calendario académico" class="faq-guide-img">
+                <span class="img-caption">Ejemplo de distribución de turnos de examen en el calendario académico</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Respuesta 4: Estacionamiento -->
+          <div class="faq-answer-card" id="gen-4">
+            <div class="badge-tag">Servicios del Campus</div>
+            <h2>¿Cómo funciona el estacionamiento?</h2>
+            <div class="answer-body">
+              <p>La facultad cuenta con estacionamiento con descuento para estudiantes:</p>
+              <div class="highlight-box box-purple">
+                <i class="fa-solid fa-car"></i>
+                <div>
+                  <ul>
+                    <li><strong>Registro previo:</strong> Debés registrar la patente/matrícula de tu vehículo en autogestión o en la oficina de ATECOR.</li>
+                    <li><strong>Acreditación de saldo:</strong> ATECOR te acredita saldo en tu cuenta vinculada a tu número de legajo.</li>
+                    <li><strong>Pago automático:</strong> El costo del estacionamiento se debita automáticamente de tu saldo al momento de la salida por la barrera.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Respuesta 5: Comedor -->
+          <div class="faq-answer-card" id="gen-5">
+            <div class="badge-tag tag-pink">Beneficios Estudiantiles</div>
+            <h2>Comedor Universitario</h2>
+            <div class="answer-body">
+              <p>Sí, la facultad dispone de servicio de Comedor Universitario para toda la comunidad estudiantil:</p>
+              <div class="schedule-grid">
+                <div class="schedule-item"><strong>Costo del menú:</strong> $7.500 (incluye plato principal, guarnición y fruta)</div>
+                <div class="schedule-item"><strong>Horario de atención:</strong> De 12:30 a 14:45 hs</div>
+              </div>
+              <p>En caso de requerir menu especial (Vegetariano o Sin Tacc) recomendamos consultar un día antes si tienen disponibilidad.</p>
+            </div>
+          </div>
+
+          <!-- Respuesta 6: Promoción práctica -->
+          <div class="faq-answer-card" id="gen-6">
+            <div class="badge-tag tag-purple">Evaluación</div>
+            <h2>¿La promoción práctica se vence?</h2>
+            <div class="answer-body">
+              <p><strong>Sí, la aprobación o promoción de la parte práctica tiene vencimiento.</strong></p>
+              <div class="highlight-box">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p>El plazo exacto depende de la cátedra y del departamento de cada carrera:</p>
+                <ul>
+                  <li><strong>Materias básicas:</strong> Usualmente la promoción práctica dura <strong>2 ciclos lectivos</strong> (20 mesas de examen).</li>
+                  <li><strong>Materias específicas/otras cátedras:</strong> En algunas materias dura solamente <strong>1 ciclo lectivo</strong> (10 mesas).</li>
+                </ul>
+              </div>
+              <p>Se recomienda consultar siempre con la cátedra respectiva para conocer las condiciones particulares.</p>
+            </div>
+          </div>
+
+          <!-- Respuesta 7: Inscripción a Examen Final -->
+          <div class="faq-answer-card" id="gen-7">
+            <div class="badge-tag tag-pink">Trámites y Exámenes</div>
+            <h2>¿Cómo inscribirse a un examen final?</h2>
+            <div class="answer-body">
+              <p>La inscripción a las mesas de examen final se realiza a través del sistema de <strong>Autogestión</strong>:</p>
+              
+              <div class="highlight-box">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <div>
+                  <p><strong>Requisitos obligatorios antes de inscribirte:</strong></p>
+                  <ul>
+                    <li>Estar en condición <strong>regular</strong> en la materia.</li>
+                    <li>Tener aprobadas las <strong>correlativas</strong> necesarias para rendir.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="highlight-box box-purple">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                  <p><strong>Plazo límite de inscripción:</strong> Hasta <strong>48 horas hábiles</strong> antes de la mesa.</p>
+                  <p><small><em>Ejemplo:</em> Si rendís un día <strong>lunes</strong>, tenés tiempo de inscribirte hasta el <strong>miércoles anterior a las 22 hs.</strong></small></p>
+                </div>
+              </div>
+
+              <p><strong>Paso a paso para inscribirte:</strong></p>
+              <ol style="padding-left: 20px; margin-bottom: 16px;">
+                <li>Ingresá al portal de <a href="https://ww1.frc.utn.edu.ar/academico3/defaultreduced.frc" target="_blank" style="color: var(--color-purple); font-weight: 700;">Autogestión 3 UTN FRC <i class="fa-solid fa-arrow-up-right-from-square"></i></a> con tu legajo y contraseña.</li>
+                <li>En el menú lateral, debajo de TRANSACCIONES, <strong>"Inscribirme a Examenes" > "ACEPTAR"</strong>.</li>
+                <li>Elegí la materia disponible a la que te querés presentar.</li>
+              </ol>
+
+              <!-- Imagen explicativa de selección -->
+              <div class="faq-image-container">
+                <img src="https://lh3.googleusercontent.com/d/1Cv1vPH34CCmkBfd1TK5YaomrgMZjsJhu" alt="Pantalla de inscripción a examen" class="faq-guide-img">
+                <span class="img-caption">Vista de selección de materia para examen final en autogestión</span>
+              </div>
+
+              <div class="highlight-box" style="border-left-color: var(--color-pink); background-color: #fff5fa; color: #831843;">
+                <i class="fa-solid fa-print"></i>
+                <p><strong>¡Paso fundamental!</strong> Una vez confirmada la inscripción, hacé clic siempre en <strong>"Imprimir Comprobante"</strong> (o descargalo en PDF). Este documento es tu único respaldo para justificar la inscripción en caso de cualquier inconveniente técnico o error de sistema en las actas.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Respuesta 8: Consulta de fechas de examen -->
+          <div class="faq-answer-card" id="gen-8">
+            <div class="badge-tag">Calendario Académico</div>
+            <h2>¿Cómo consulto una fecha de final?</h2>
+            <div class="answer-body">
+              <p>Podés consultar con anticipación los días, horarios y aulas de cada mesa de examen ingresando a la sección dedicada dentro de <a href="https://ww1.frc.utn.edu.ar/academico3/defaultreduced.frc" target="_blank" style="color: var(--color-purple); font-weight: 700;">Autogestión 3 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>.</p>
+
+              <p><strong>Paso a paso para consultar:</strong></p>
+              <ol style="padding-left: 20px; margin-bottom: 16px;">
+                <li>Dentro de autogestión 3, tenes a la sección <strong>"MIS CONSULTAS" > "Exámenes" > "Fechas de Examen"</strong>.</li>
+                <li>Seleccioná la materia, el turno y la mesa correspondiente que querés verificar.</li>
+              </ol>
+
+              <!-- Imagen 1: Formulario de consulta -->
+              <div class="faq-image-container">
+                <img src="https://lh3.googleusercontent.com/d/1vbG4lXY41xr18Nen-14K4l6IsIKpgT5l" alt="Formulario de consulta de fechas" class="faq-guide-img">
+                <span class="img-caption">1. Seleccioná la materia y hacé clic en "Consultar"</span>
+              </div>
+
+              <p>3. El sistema te mostrará la lista con la fecha exacta, hora de inicio y docente asignado:</p>
+
+              <!-- Imagen 2: Resultado de la consulta -->
+              <div class="faq-image-container">
+                <img src="https://lh3.googleusercontent.com/d/19T6_nXB8cMgLVWzk7S-AJkiaTuerOPt6" alt="Resultado de la fecha de examen" class="faq-guide-img">
+                <span class="img-caption">2. Detalle de fecha, hora y tribunal asignado para rendir</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Respuesta 9: Inasistencia a final -->
+          <div class="faq-answer-card" id="gen-9">
+            <div class="badge-tag tag-purple">Reglamento de Exámenes</div>
+            <h2>¿Qué pasa si me anoto a un final pero no me presento?</h2>
+            <div class="answer-body">
+              <div class="highlight-box box-purple">
+                <i class="fa-solid fa-circle-info"></i>
+                <p><strong>No pasa absolutamente nada.</strong> Quedás registrado únicamente como <strong>"Ausente"</strong>.</p>
+              </div>
+              <p>No se computa como aplazo ni baja tu promedio general. Conservás tu condición de regular intacta y podés volver a inscribirte en el siguiente llamado o turno de examen disponible.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: CURSOS DISPONIBLES -->
+    <section id="cursos" class="tab-section">
+      <header class="section-hero">
+        <span class="badge-pill pill-pink">Capacitación</span>
+        <h1>Cursos Disponibles</h1>
+        <p class="hero-subtitle">Talleres, capacitaciones extracurriculares y cursos formativos organizados por Franja.</p>
+      </header>
+
+      <div class="courses-grid">
+        
+       <!-- Curso 1: Excel -->
+        <article class="course-card">
+          <div class="card-header-content">
+            <div class="card-tag tag-pink">Inscripciones Abiertas</div>
+            <h3>Curso de Excel</h3>
+            <p class="course-short-desc">Formación integral desde herramientas básicas hasta Power Query, Power Pivot, Macros y Dashboards dinámicos.</p>
+          </div>
+
+          <!-- Contenido Desplegable -->
+          <div class="course-details">
+            <div class="details-inner">
+              <p><strong>Información General del Curso:</strong></p>
+              <ul>
+                <li><strong>Modalidad:</strong> Asincrónica (estudias a tu propio ritmo sin clases en vivo obligatorias).</li>
+                <li><strong>Acceso:</strong> Plataforma virtual con clases grabadas, material complementario y actualizaciones futuras de por vida.</li>
+                <li><strong>Docente:</strong> Matías Tello (estudiante avanzado de Ingeniería Industrial - UNS).</li>
+                <li><strong>Altas en plataforma:</strong> Cada martes y viernes.</li>
+                <li><strong>Inversión:</strong> $25.000 (pago único vía transferencia).</li>
+              </ul>
+
+              <p><strong>Certificaciones disponibles:</strong></p>
+              <ul>
+                <li>Certificado de Finalización avalado por <em>M&E Courses</em>.</li>
+                <li>Certificado Nacional avalado por la <em>Cámara Argentina para la Formación Profesional y Capacitación Laboral</em> (100% bonificado solicitándolo dentro de los primeros 3 meses).</li>
+              </ul>
+
+              <p><strong>Programa y Módulos:</strong></p>
+              <ul>
+                <li><strong>Módulo 1 - Introducción a Excel:</strong> Interfaz, primera tabla, formato de celdas, filtros, orden y búsqueda.</li>
+                <li><strong>Módulo 2 - Operaciones Básicas:</strong> Operaciones, funciones esenciales y tipos de referencias.</li>
+                <li><strong>Módulo 3 - Gráficos:</strong> Tipos de gráficos y criterios de aplicación.</li>
+                <li><strong>Módulo 4 - Tips Útiles:</strong> Inmovilizar paneles, comentarios, impresión, exportación a PDF y seguridad de datos.</li>
+                <li><strong>Módulo 5 - Operaciones Avanzadas:</strong> Funciones lógicas y de búsqueda avanzada para automatización.</li>
+                <li><strong>Módulo 6 - Herramientas Avanzadas:</strong> Limpieza, gestión y manipulación masiva de datos.</li>
+                <li><strong>Módulo 7 - Tablas y Gráficos Dinámicos:</strong> Creación de reportes automatizados y primer Dashboard/Tablero de control.</li>
+                <li><strong>Módulo 8 - Introducción a Macros:</strong> Entorno VBA para automatizar tareas repetitivas.</li>
+                <li><strong>Módulo 9 - Power Query:</strong> Extracción, transformación y limpieza de grandes volúmenes de datos.</li>
+                <li><strong>Módulo 10 - Power Pivot:</strong> Modelado de datos profesional y combinación de múltiples fuentes.</li>
+              </ul>
+
+              <div class="course-meta">
+                <span><i class="fa-solid fa-laptop"></i> <strong>Modalidad:</strong> 100% Asincrónica</span>
+                <span><i class="fa-solid fa-wallet"></i> <strong>Valor:</strong> $25.000 (Pago único)</span>
+                <span><i class="fa-solid fa-certificate"></i> Doble certificación disponible</span>
+              </div>
+
+              <!-- Reemplaza '#' por tu enlace de Google Forms o WhatsApp de inscripción -->
+              <a href="#" target="_blank" class="btn-register">
+                <i class="fa-solid fa-pen-to-square"></i> Inscribirme al Curso
+              </a>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="date"><i class="fa-solid fa-file-excel"></i> 10 Módulos | Virtual y Asincrónico</span>
+            <button class="btn-toggle-course" aria-label="Ver detalles">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Curso 2: AutoCAD 2D -->
+        <article class="course-card">
+          <div class="card-header-content">
+            <div class="card-tag tag-pink">Inscripciones Abiertas</div>
+            <h3>Curso de AutoCAD 2D</h3>
+            <p class="course-short-desc">Formación práctica desde cero en dibujo técnico digital, capas, bloques, planos normalizados e incluye software 2018 de regalo.</p>
+          </div>
+
+          <!-- Contenido Desplegable -->
+          <div class="course-details">
+            <div class="details-inner">
+              <p><strong>Información General del Curso:</strong></p>
+              <ul>
+                <li><strong>Modalidad:</strong> Asincrónica (estudias a tu propio ritmo sin clases en vivo obligatorias).</li>
+                <li><strong>Acceso:</strong> Plataforma virtual con clases grabadas, material complementario y actualizaciones futuras de por vida.</li>
+                <li><strong>Docente:</strong> Natalia Delbianco (Ingeniera Civil - UNS).</li>
+                <li><strong>Altas en plataforma:</strong> Cada martes y viernes.</li>
+                <li><strong>Inversión:</strong> $23.000 (pago único vía transferencia).</li>
+              </ul>
+
+              <p><strong>Programa y Módulos:</strong></p>
+              <ul>
+                <li><strong>Módulo 1 – Introducción al Software:</strong> Interfaz, barra de comandos, atajos de teclado y diferencia entre espacio modelo y espacio papel.</li>
+                <li><strong>Módulo 2 – Primeros Pasos en el Dibujo:</strong> Herramientas fundamentales de dibujo y modificación para figuras y bases de planos digitales.</li>
+                <li><strong>Módulo 3 – Configuración y Organización de Planos:</strong> Estructuración profesional mediante capas (layers), bloques, textos y estilos de acotación.</li>
+                <li><strong>Módulo 4 – Presentación y Exportación de Archivos:</strong> Configuración de láminas para impresión, escalas en layout y exportación en múltiples formatos.</li>
+                <li><strong>Ejercicio Final Integrador:</strong> Aplicación práctica integral para desarrollar un plano completo de manera autónoma.</li>
+              </ul>
+
+              <p><strong>Bonus y Software Incluido:</strong></p>
+              <ul>
+                <li>Librería completa de bloques lista para usar.</li>
+                <li>Planilla con normas y símbolos de representación técnica normalizada.</li>
+                <li>Software AutoCAD versión 2018 de regalo con manual de instalación paso a paso.</li>
+              </ul>
+
+              <div class="course-meta">
+                <span><i class="fa-solid fa-laptop"></i> <strong>Modalidad:</strong> 100% Asincrónica</span>
+                <span><i class="fa-solid fa-wallet"></i> <strong>Valor:</strong> $23.000 (Pago único)</span>
+                <span><i class="fa-solid fa-gift"></i> Incluye Software 2018 + Librería de bloques</span>
+              </div>
+
+              <!-- Reemplaza '#' por tu enlace de Google Forms o WhatsApp de inscripción -->
+              <a href="#" target="_blank" class="btn-register">
+                <i class="fa-solid fa-pen-to-square"></i> Inscribirme al Curso
+              </a>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="date"><i class="fa-solid fa-compass-drafting"></i> 4 Módulos + Final | Asincrónico</span>
+            <button class="btn-toggle-course" aria-label="Ver detalles">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Curso 3: Revit (Completo) -->
+        <article class="course-card">
+          <div class="card-header-content">
+            <div class="card-tag tag-purple">Finalizado</div>
+            <h3>Revit Arquitectura (Modelado BIM)</h3>
+            <p class="course-short-desc">Formación completa en modelado BIM, diseño arquitectónico, estructural, topografía, renders y cómputos métricos en 3D.</p>
+          </div>
+
+          <!-- Contenido Desplegable -->
+          <div class="course-details">
+            <div class="details-inner">
+              <p><strong>Información General del Curso:</strong></p>
+              <ul>
+                <li><strong>Estado:</strong> Finalizado (edición cerrada).</li>
+                <li><strong>Inicio:</strong> Sábado 13 de Junio (8 sábados consecutivos).</li>
+                <li><strong>Modalidad:</strong> 100% Virtual.</li>
+                <li><strong>Inversión:</strong> $25.000 (con certificación oficial incluida).</li>
+                <li><strong>Destinatarios:</strong> Especialmente pensado para estudiantes de la UTN FRC.</li>
+              </ul>
+
+              <p><strong>Programa y Módulos:</strong></p>
+              <ul>
+                <li><strong>Módulo 1: Introducción a Revit y Metodología BIM:</strong> Interfaz, configuración inicial, gestión de archivos/proyectos, importación de planos CAD y manejo de familias, tipos e instancias.</li>
+                <li><strong>Módulo 2: Modelado Arquitectónico:</strong> Muros, suelos, cubiertas, inserción de aberturas y organización de elementos.</li>
+                <li><strong>Módulo 3: Modelado Estructural:</strong> Columnas, vigas, losas, fundaciones/cimentaciones, escaleras, rampas y barandas.</li>
+                <li><strong>Módulo 4: Topografía y Emplazamiento:</strong> Creación de terrenos, modelado topográfico e implantación de proyectos.</li>
+                <li><strong>Módulo 5: Documentación Técnica:</strong> Gráficos, cotas, etiquetas, anotaciones, armado e impresión de láminas.</li>
+                <li><strong>Módulo 6: Modelado Avanzado:</strong> Masas conceptuales y desarrollo de geometrías complejas.</li>
+                <li><strong>Módulo 7: Renderizado y Visualización:</strong> Vistas 3D, cámaras, recorridos virtuales y renderizado.</li>
+                <li><strong>Módulo 8: Cómputos y Cuantificación:</strong> Tablas de planificación, cuantificación de materiales y extracción de datos del modelo.</li>
+              </ul>
+
+              <div class="course-meta">
+                <span><i class="fa-solid fa-calendar-days"></i> <strong>Duración:</strong> 8 Sábados</span>
+                <span><i class="fa-solid fa-certificate"></i> Incluye Certificado</span>
+              </div>
+
+              <a href="#" class="btn-register" style="opacity: 0.6; pointer-events: none;">
+                <i class="fa-solid fa-lock"></i> Curso Finalizado
+              </a>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="date"><i class="fa-solid fa-cubes"></i> 8 Módulos | Finalizado</span>
+            <button class="btn-toggle-course" aria-label="Ver detalles">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Curso 4: Power BI -->
+        <article class="course-card">
+          <div class="card-header-content">
+            <div class="card-tag tag-pink">Inscripciones Abiertas</div>
+            <h3>Curso de Power BI</h3>
+            <p class="course-short-desc">Visualización y análisis de datos empresariales, creación de dashboards interactivos y reportes ejecutivos.</p>
+          </div>
+
+          <!-- Contenido Desplegable -->
+          <div class="course-details">
+            <div class="details-inner">
+              <p><strong>Información General del Curso:</strong></p>
+              <ul>
+                <li><strong>Inicio:</strong> 15 de Septiembre.</li>
+                <li><strong>Cursado:</strong> 8 clases virtuales los días martes de 15:00 a 16:30 hs.</li>
+                <li><strong>Modalidad:</strong> 100% Virtual.</li>
+              </ul>
+
+              <p><strong>Contenido del curso:</strong></p>
+              <ul>
+                <li>Importación y limpieza de datos con Power Query.</li>
+                <li>Modelado relacional y medidas calculadas con DAX inicial.</li>
+                <li>Diseño de paneles dinámicos y reportes de indicadores (KPIs).</li>
+              </ul>
+
+              <div class="course-meta">
+                <span><i class="fa-solid fa-calendar-days"></i> <strong>Inicio:</strong> 15/09 (Martes 15:00 a 16:30 hs)</span>
+                <span><i class="fa-solid fa-clock"></i> <strong>Duración:</strong> 8 clases virtuales</span>
+                <span><i class="fa-solid fa-certificate"></i> Incluye certificado</span>
+              </div>
+
+              <!-- Botón de inscripción idéntico al Curso 2 -->
+              <a href="#" target="_blank" class="btn-register">
+                <i class="fa-solid fa-pen-to-square"></i> Inscribirme al Curso
+              </a>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="date"><i class="fa-solid fa-chart-simple"></i> Inicia 15/09 | 8 Clases</span>
+            <button class="btn-toggle-course" aria-label="Ver detalles">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </article>
+
+<!-- Curso 5: Revit Módulo 1 -->
+        <article class="course-card">
+          <div class="card-header-content">
+            <div class="card-tag tag-purple">Finalizado</div>
+            <h3>Revit - Módulo 1</h3>
+            <p class="course-short-desc">Curso virtual enfocado en estudiantes de Ingeniería Civil: metodología BIM, modelado arquitectónico, niveles y armado de planos.</p>
+          </div>
+
+          <!-- Contenido Desplegable -->
+          <div class="course-details">
+            <div class="details-inner">
+              <p><strong>Información General del Curso:</strong></p>
+              <ul>
+                <li><strong>Estado:</strong> Finalizado (edición cerrada).</li>
+                <li><strong>Modalidad:</strong> Virtual (5 clases de 2 hs cada una, de 14:30 a 16:30 hs).</li>
+                <li><strong>Inversión:</strong> $10.000 (vía transferencia con certificación incluida).</li>
+              </ul>
+
+              <p><strong>Cronograma de Clases:</strong></p>
+              <ul>
+                <li>Viernes 19/04</li>
+                <li>Lunes 22/04</li>
+                <li>Miércoles 24/04</li>
+                <li>Viernes 26/04</li>
+                <li>Lunes 29/04</li>
+              </ul>
+
+              <p><strong>Temario Módulo 1:</strong></p>
+              <ul>
+                <li>Introducción a la metodología BIM.</li>
+                <li>Tipos de archivo e interfaz de usuario.</li>
+                <li>Operaciones de modelado arquitectónico (niveles, muros, suelos, componentes, puertas y ventanas).</li>
+                <li>Cubiertas, escaleras, barandas y muros cortina.</li>
+                <li>Operaciones anotativas (cotas, textos, etiquetas, etc.).</li>
+                <li>Operaciones visuales y creación de planos técnicos.</li>
+              </ul>
+
+              <div class="course-meta">
+                <span><i class="fa-solid fa-clock"></i> <strong>Duración:</strong> 5 clases (10 hs totales)</span>
+                <span><i class="fa-solid fa-certificate"></i> Incluye certificación</span>
+              </div>
+
+              <a href="#" class="btn-register" style="opacity: 0.6; pointer-events: none;">
+                <i class="fa-solid fa-lock"></i> Inscripciones Cerradas
+              </a>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="date"><i class="fa-solid fa-cubes"></i> Módulo 1 | Finalizado</span>
+            <button class="btn-toggle-course" aria-label="Ver detalles">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Curso 6: Revit Módulo 2 -->
+        <article class="course-card">
+          <div class="card-header-content">
+            <div class="card-tag tag-purple">Finalizado</div>
+            <h3>Revit - Módulo 2</h3>
+            <p class="course-short-desc">Modelado avanzado en Estructuras y MEP (instalaciones) vía Zoom con docentes especialistas en Autodesk.</p>
+          </div>
+
+          <!-- Contenido Desplegable -->
+          <div class="course-details">
+            <div class="details-inner">
+              <p><strong>Información General del Curso:</strong></p>
+              <ul>
+                <li><strong>Estado:</strong> Finalizado (edición cerrada).</li>
+                <li><strong>Modalidad:</strong> Virtual por Zoom (6 clases: lunes, miércoles y viernes de 08:30 a 10:30 hs).</li>
+                <li><strong>Docentes:</strong> Especialistas en Autodesk.</li>
+                <li><strong>Inversión:</strong> $25.000 (vía transferencia, con descuentos especiales por combo).</li>
+              </ul>
+
+              <p><strong>Temario Módulo 2:</strong></p>
+              <ul>
+                <li><strong>Estructuras:</strong>
+                  <ul>
+                    <li>Modelado: vigas, columnas, fundaciones, sistemas de vigas, tornapuntas y reticulados.</li>
+                    <li>Operaciones visuales: creación de vistas estructurales, modificaciones por disciplina y plantillas de vista.</li>
+                    <li>Operaciones anotativas: acotado, designación de planos y etiquetas específicas.</li>
+                  </ul>
+                </li>
+                <li><strong>MEP (Instalaciones):</strong>
+                  <ul>
+                    <li>Modelado: creación de sistemas, tuberías, uniones, accesorios y equipos sanitarios/mecánicos.</li>
+                    <li>Operaciones visuales: plantillas de vista, filtros y modificaciones por disciplina.</li>
+                    <li>Operaciones anotativas: acotado, designado de planos y etiquetas.</li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="course-meta">
+                <span><i class="fa-solid fa-clock"></i> <strong>Duración:</strong> 6 clases en vivo</span>
+                <span><i class="fa-solid fa-certificate"></i> Incluye certificación</span>
+              </div>
+
+              <a href="#" class="btn-register" style="opacity: 0.6; pointer-events: none;">
+                <i class="fa-solid fa-lock"></i> Inscripciones Cerradas
+              </a>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="date"><i class="fa-solid fa-cubes"></i> Módulo 2 | Finalizado</span>
+            <button class="btn-toggle-course" aria-label="Ver detalles">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </article>
+        <!-- Curso 7: Finanzas Personales -->
+        <article class="course-card">
+          <div class="card-header-content">
+            <div class="card-tag tag-purple">Finalizado | Gratuito</div>
+            <h3>Curso de Finanzas Personales</h3>
+            <p class="course-short-desc">Herramientas prácticas de gestión económica, presupuestos, ahorro, inversión y protección del capital frente a la inflación para estudiantes y profesionales de ingeniería.</p>
+          </div>
+
+          <!-- Contenido Desplegable -->
+          <div class="course-details">
+            <div class="details-inner">
+              <p><strong>Información General del Curso:</strong></p>
+              <ul>
+                <li><strong>Estado:</strong> Finalizado (actividad 100% gratuita).</li>
+                <li><strong>Modalidad:</strong> Virtual (8 clases, los días lunes de 16:00 a 17:30 hs).</li>
+                <li><strong>Inicio:</strong> Lunes 01 de Junio.</li>
+                <li><strong>Disertante:</strong> Diego Gallo (Contador Público y Lic. en Administración de Empresas, Agente Productor CNV Mat. N.° 1910, especialista en inversiones y asesor financiero en Balanz).</li>
+              </ul>
+
+              <p><strong>Ejes Temáticos:</strong></p>
+              <ul>
+                <li>Presupuestos y organización financiera personal.</li>
+                <li>Análisis de costos y toma de decisiones económicas.</li>
+                <li>Alternativas de ahorro, inversión y financiamiento.</li>
+                <li>Estrategias para proteger el capital frente a la inflación y administración de recursos en el contexto actual.</li>
+              </ul>
+
+              <div class="course-meta">
+                <span><i class="fa-solid fa-clock"></i> <strong>Duración:</strong> 8 clases</span>
+                <span><i class="fa-solid fa-gift"></i> Capacitación Gratuita</span>
+              </div>
+
+              <a href="#" class="btn-register" style="opacity: 0.6; pointer-events: none;">
+                <i class="fa-solid fa-lock"></i> Curso Finalizado
+              </a>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="date"><i class="fa-solid fa-coins"></i> 8 Clases | Gratuito</span>
+            <button class="btn-toggle-course" aria-label="Ver detalles">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </article>
+
+        <!-- Curso 8: Liderazgo, Oratoria y Habilidades Blandas -->
+        <article class="course-card">
+          <div class="card-header-content">
+            <div class="card-tag tag-purple">Finalizado | Gratuito</div>
+            <h3>Curso de Liderazgo, Oratoria y Habilidades Blandas</h3>
+            <p class="course-short-desc">Formación enfocada en potenciar la comunicación efectiva, liderazgo, oratoria y desarrollo profesional en el ámbito tecnológico.</p>
+          </div>
+
+          <!-- Contenido Desplegable -->
+          <div class="course-details">
+            <div class="details-inner">
+              <p><strong>Información General del Curso:</strong></p>
+              <ul>
+                <li><strong>Estado:</strong> Finalizado (actividad 100% gratuita).</li>
+                <li><strong>Modalidad:</strong> Virtual.</li>
+                <li><strong>Inicio y Horario:</strong> Martes 26 de Mayo – 16:00 hs.</li>
+                <li><strong>Duración:</strong> 4 clases consecutivas.</li>
+                <li><strong>Disertante:</strong> Pamela Luques (Lic. en Relaciones Públicas, Speaker Internacional, Consultora Corporativa y Capacitadora).</li>
+              </ul>
+
+              <p><strong>Herramientas y Temas Abordados:</strong></p>
+              <ul>
+                <li>Comunicación efectiva y oratoria.</li>
+                <li>Liderazgo y trabajo en equipo.</li>
+                <li>Inteligencia emocional y pensamiento crítico.</li>
+                <li>Marca personal y empleabilidad IT en el contexto de transformación digital e IA.</li>
+              </ul>
+
+              <div class="course-meta">
+                <span><i class="fa-solid fa-clock"></i> <strong>Duración:</strong> 4 clases consecutivas</span>
+                <span><i class="fa-solid fa-gift"></i> Capacitación Gratuita</span>
+              </div>
+
+              <a href="#" class="btn-register" style="opacity: 0.6; pointer-events: none;">
+                <i class="fa-solid fa-lock"></i> Curso Finalizado
+              </a>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="date"><i class="fa-solid fa-comments"></i> 4 Clases | Gratuito</span>
+            <button class="btn-toggle-course" aria-label="Ver detalles">
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- SECCIÓN 5: VISITAS TÉCNICAS -->
+    <section id="visitas" class="tab-section">
+      <header class="section-hero">
+        <span class="badge-pill">Experiencia Profesional</span>
+        <h1>Visitas Técnicas</h1>
+        <p class="hero-subtitle">Recorridos a plantas industriales y empresas para vincular la teoría académica con la práctica profesional.</p>
+      </header>
+
+      <div class="visits-grid">
+        
+        <!-- Visita 1: Bimbo -->
+        <article class="visit-card">
+          <div class="visit-image-wrapper">
+            <img src="https://lh3.googleusercontent.com/d/16exUd5pUf8exjevv0ewOcavXMZFDhee0" alt="Grupo Bimbo" class="visit-img">
+            <span class="visit-badge">Alimentos</span>
+          </div>
+          <div class="visit-content">
+            <div>
+              <span class="visit-category">Visita Técnica</span>
+              <h3 class="visit-title">Grupo Bimbo</h3>
+              <ul class="visit-info-list">
+                <li><i class="fa-regular fa-calendar"></i> <strong>Fecha:</strong> 6 de julio</li>
+                <li><i class="fa-regular fa-clock"></i> <strong>Horario:</strong> 10:00 a 12:00 hs</li>
+                <li><i class="fa-solid fa-location-dot"></i> <strong>Lugar:</strong> Planta Córdoba</li>
+              </ul>
+            </div>
+            <a href="https://forms.gle/3QoTsvbHHAJuMuMK7" class="btn-visit-action disabled">
+              <i class="fa-solid fa-pen-to-square"></i> Inscripción Cerrada
+            </a>
+          </div>
+        </article>
+
+        <!-- Visita 2: Arcor -->
+        <article class="visit-card">
+          <div class="visit-image-wrapper">
+            <img src="https://lh3.googleusercontent.com/d/10uv6J2G4A0-jD3vqPFdXtYx3kf7120Ii" alt="Grupo Arcor" class="visit-img">
+            <span class="visit-badge">Alimentos</span>
+          </div>
+          <div class="visit-content">
+            <div>
+              <span class="visit-category">Visita Técnica</span>
+              <h3 class="visit-title">Grupo Arcor</h3>
+              <ul class="visit-info-list">
+                <li><i class="fa-regular fa-calendar"></i> <strong>Fecha:</strong> 14 de Mayo</li>
+                <li><i class="fa-regular fa-clock"></i> <strong>Horario:</strong> 09:00 a 12 hs</li>
+                <li><i class="fa-solid fa-location-dot"></i> <strong>Lugar:</strong> Arroyito Córdoba</li>
+              </ul>
+            </div>
+            <a href="https://forms.gle/mNYayiQsUdUF2dM79" class="btn-visit-action disabled">
+              <i class="fa-solid fa-pen-to-square"></i> Inscripción Cerrada
+            </a>
+          </div>
+        </article>
+
+        <!-- Visita 3: Central Nuclear Embalse -->
+        <article class="visit-card">
+          <div class="visit-image-wrapper">
+            <img src="https://lh3.googleusercontent.com/d/1Yoq9JK5mIyfxuF87JA8yo_sq8VRs4CCf" alt="Central Nuclear Embalse" class="visit-img">
+            <span class="visit-badge">Energía</span>
+          </div>
+          <div class="visit-content">
+            <div>
+              <span class="visit-category">Visita Técnica</span>
+              <h3 class="visit-title">Central Nuclear Embalse</h3>
+              <ul class="visit-info-list">
+                <li><i class="fa-regular fa-calendar"></i> <strong>Fecha:</strong> A confirmar</li>
+                <li><i class="fa-regular fa-clock"></i> <strong>Horario:</strong> Tarde</li>
+                <li><i class="fa-solid fa-location-dot"></i> <strong>Lugar:</strong> Embalse, Córdoba</li>
+              </ul>
+            </div>
+            <a href="#" class="btn-visit-action disabled">
+              <i class="fa-solid fa-pen-to-square"></i> Inscripción Pendiente
+            </a>
+          </div>
+        </article>
+
+        <!-- Visita 4: FAdeA -->
+        <article class="visit-card">
+          <div class="visit-image-wrapper">
+            <img src="https://lh3.googleusercontent.com/d/1bDqDN7F3E_e3hAw4su-4IdZHBiuxQLUl" alt="FAdeA" class="visit-img">
+            <span class="visit-badge">Aeronáutica</span>
+          </div>
+          <div class="visit-content">
+            <div>
+              <span class="visit-category">Visita Técnica</span>
+              <h3 class="visit-title">FAdeA (Fábrica de Aviones)</h3>
+              <ul class="visit-info-list">
+                <li><i class="fa-regular fa-calendar"></i> <strong>Fecha:</strong> 17 de Septiembre</li>
+                <li><i class="fa-regular fa-clock"></i> <strong>Horario:</strong> 09:00 a 11:00 hs</li>
+                <li><i class="fa-solid fa-location-dot"></i> <strong>Lugar:</strong> Córdoba Capital</li>
+              </ul>
+            </div>
+            <a href="https://forms.gle/zbRSywAZoQ9kmLR87" target="_blank" class="btn-visit-action">
+              <i class="fa-solid fa-pen-to-square"></i> Inscripción Abierta
+            </a>
+          </div>
+        </article>
+
+        <!-- Visita 5: Globant -->
+        <article class="visit-card">
+          <div class="visit-image-wrapper">
+            <img src="https://lh3.googleusercontent.com/d/1Yoq9JK5mIyfxuF87JA8yo_sq8VRs4CCf" alt="Globant Córdoba" class="visit-img">
+            <span class="visit-badge">Software</span>
+          </div>
+          <div class="visit-content">
+            <div>
+              <span class="visit-category">Visita Técnica</span>
+              <h3 class="visit-title">Globant (Oficinas Córdoba)</h3>
+              <ul class="visit-info-list">
+                <li><i class="fa-regular fa-calendar"></i> <strong>Fecha:</strong> 3 de Septiembre</li>
+                <li><i class="fa-regular fa-clock"></i> <strong>Horario:</strong> 10:00 a 11:30 hs</li>
+                <li><i class="fa-solid fa-location-dot"></i> <strong>Lugar:</strong> Córdoba Capital</li>
+              </ul>
+            </div>
+            <a href="https://forms.gle/eXzxfHR6429eghoV8" target="_blank" class="btn-visit-action">
+              <i class="fa-solid fa-pen-to-square"></i> Inscripción Abierta
+            </a>
+          </div>
+        </article>
+
+        <!-- Visita 6: Porta Hermanos -->
+        <article class="visit-card">
+          <div class="visit-image-wrapper">
+            <img src="https://lh3.googleusercontent.com/d/1fml8ZgWnIPwx2TMCE9T34Rsa9xjywwYa" alt="Porta Hermanos" class="visit-img">
+            <span class="visit-badge">Alimentos</span>
+          </div>
+          <div class="visit-content">
+            <div>
+              <span class="visit-category">Visita Técnica</span>
+              <h3 class="visit-title">Porta Hermanos S.A.</h3>
+              <ul class="visit-info-list">
+                <li><i class="fa-regular fa-calendar"></i> <strong>Fecha:</strong> 27 de Mayo</li>
+                <li><i class="fa-regular fa-clock"></i> <strong>Horario:</strong> 10:00 a 12:00 hs</li>
+                <li><i class="fa-solid fa-location-dot"></i> <strong>Lugar:</strong> Córdoba Capital</li>
+              </ul>
+            </div>
+            <a href="#" class="btn-visit-action disabled">
+              <i class="fa-solid fa-pen-to-square"></i> Inscripción Cerrada
+            </a>
+          </div>
+        </article>
+
+        <!-- Visita 7: CNH Industrial -->
+        <article class="visit-card">
+          <div class="visit-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&auto=format&fit=crop&q=80" alt="CNH Industrial" class="visit-img">
+            <span class="visit-badge">Metalmecánica</span>
+          </div>
+          <div class="visit-content">
+            <div>
+              <span class="visit-category">Visita Técnica</span>
+              <h3 class="visit-title">CNH Industrial</h3>
+              <ul class="visit-info-list">
+                <li><i class="fa-regular fa-calendar"></i> <strong>Fecha:</strong> 17 de Septiembre</li>
+                <li><i class="fa-regular fa-clock"></i> <strong>Horario:</strong> 09:00 a 11:00 hs</li>
+                <li><i class="fa-solid fa-location-dot"></i> <strong>Lugar:</strong> 695 Ferreyra</li>
+              </ul>
+            </div>
+            <a href="https://forms.gle/VUXbySGbWZJLrmqz7" class="btn-visit-action disabled">
+              <i class="fa-solid fa-pen-to-square"></i> Inscripción Cerrada
+            </a>
+          </div>
+        </article>
+
+        <!-- Visita 8: Aguas Cordobesas -->
+        <article class="visit-card">
+          <div class="visit-image-wrapper">
+            <img src="https://lh3.googleusercontent.com/d/1gjH7gfAI6O_R8HOQhjm-RcFzd77SEc-3" alt="Planta Aguas Cordobesas" class="visit-img">
+            <span class="visit-badge">Servicios</span>
+          </div>
+          <div class="visit-content">
+            <div>
+              <span class="visit-category">Visita Técnica</span>
+              <h3 class="visit-title">Aguas Cordobesas</h3>
+              <ul class="visit-info-list">
+                <li><i class="fa-regular fa-calendar"></i> <strong>Fecha:</strong> 23 de Octubre</li>
+                <li><i class="fa-regular fa-clock"></i> <strong>Horario:</strong> 10:00 hs</li>
+                <li><i class="fa-solid fa-location-dot"></i> <strong>Lugar:</strong> Planta Los Molinos</li>
+              </ul>
+            </div>
+            <!-- Coloca tu link en href cuando esté el Forms de Aguas Cordobesas -->
+            <a href="https://forms.gle/GwHh9ebM1r4F4DMy8" target="_blank" class="btn-visit-action">
+              <i class="fa-solid fa-pen-to-square"></i> Inscripción Abierta
+            </a>
+          </div>
+        </article>
+
+        <!-- Visita 9: Molinos Florencia -->
+        <article class="visit-card">
+          <div class="visit-image-wrapper">
+            <img src="https://lh3.googleusercontent.com/d/1vbGCmjFhyzVfjpfT15oygZV4vkvFJ4F0" alt="Molinos Florencia" class="visit-img">
+            <span class="visit-badge">Agroindustria</span>
+          </div>
+          <div class="visit-content">
+            <div>
+              <span class="visit-category">Visita Técnica</span>
+              <h3 class="visit-title">Molinos Florencia</h3>
+              <ul class="visit-info-list">
+                <li><i class="fa-regular fa-calendar"></i> <strong>Fecha:</strong> 8 de Mayo</li>
+                <li><i class="fa-regular fa-clock"></i> <strong>Horario:</strong> 14:00 hs</li>
+                <li><i class="fa-solid fa-location-dot"></i> <strong>Lugar:</strong> Planta Córdoba</li>
+              </ul>
+            </div>
+            <a href="https://forms.gle/iFRtYN3G7fVjPSqHA" class="btn-visit-action disabled">
+              <i class="fa-solid fa-pen-to-square"></i> Inscripción Cerrada
+            </a>
+          </div>
+        </article>
+        </div>
+</section>
+      <<!-- SECCIÓN 6: NOSOTROS (COMUNIDAD FRANJA) -->
+    <section id="nosotros" class="tab-section">
+
+      <!-- Encabezado Humano y Cercano -->
+      <div class="about-hero-simple">
+        <h1>Estudiantes con Iniciativa</h1>
+      </div>
+
+      <!-- Bloque de Identidad / Quiénes Somos -->
+      <div class="about-intro-card">
+        <div class="about-intro-text">
+          <h2>¿Quiénes somos y por qué estamos acá?</h2>
+          <p>
+            Franja Morada es un grupo autogestionado de estudiantes de todas las ingenierías de la UTN FRC. Pero antes que nada, somos compañeros de cursada: compartimos las mismas materias, los mismos nervios en los finales y entregas de trabajos prácticos, decidimos organizarnos voluntariamente para dar una mano desde a quienes recién arrancan hasta a los ya están en los últimos años.
+          </p>
+          <p>
+            Creemos en la solidaridad entre compañeros, que nuestra facu puede crecer, y en que ningún ingresante o estudiante debería sentirse solo a la hora de afrontar la vida facultativa.
+          </p>
+        </div>
+        <div class="about-intro-image">
+          <!-- Foto grupal / mateada / pasillo -->
+          <img src="https://lh3.googleusercontent.com/d/19gRofp8vYVuT2rYfkfZvmeIxSVMFr-ty" alt="Compañeros de Franja Morada" class="about-main-photo">
+          <span class="img-caption"></span>
+        </div>
+      </div>
+
+      <!-- Evolución en el Tiempo: Cómo fuimos creciendo -->
+      <div class="about-section-block">
+        <div class="section-subtitle-center">
+          <span class="badge-tag tag-purple">Nuestro Camino</span>
+          <h2>Cómo fuimos creciendo junto a la facu</h2>
+          <p>De armar apuntes compartidos a coordinar herramientas para toda la comunidad.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Paso 1 -->
+          <div class="timeline-step">
+            <div class="timeline-icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <div class="timeline-body">
+              <span class="timeline-tag">Los Inicios</span>
+              <h3>Nacidos en los pasillos</h3>
+              <p>Arrancamos compartiendo resúmenes a mano, armando grupos de estudio improvisados en el comedor y ayudándonos entre compañeros a entender las materias filtro.</p>
+            </div>
+          </div>
+
+          <!-- Paso 2 -->
+          <div class="timeline-step">
+            <div class="timeline-icon"><i class="fa-solid fa-laptop"></i></div>
+            <div class="timeline-body">
+              <span class="timeline-tag">La Expansión</span>
+              <h3>Clases de apoyo y digitalización</h3>
+              <p>Sumamos pizarras, transmisiones virtuales y carpetas públicas con modelos de examen resueltos para que todos puedan estudiar sin importar dónde vivan.</p>
+            </div>
+          </div>
+
+          <!-- Paso 3 -->
+          <div class="timeline-step">
+            <div class="timeline-icon"><i class="fa-solid fa-industry"></i></div>
+            <div class="timeline-body">
+              <span class="timeline-tag">El Presente</span>
+              <h3>Formación profesional e inclusión</h3>
+              <p>Impulsamos visitas a plantas industriales (como FADEA), capacitaciones con software de ingeniería, acompañamiento en becas y defensa constante en el Consejo Directivo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lo que construimos juntos en el día a día -->
+      <div class="about-section-block">
+        <div class="section-subtitle-center">
+          <span class="badge-tag tag-pink">Día a Día</span>
+          <h2>Lo que hacemos todos los días</h2>
+        </div>
+
+        <div class="community-grid">
+          <!-- Tarjeta 1 -->
+          <article class="community-card">
+            <div class="community-card-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h3>Tutorías y Clases de Apoyo</h3>
+            <p>Estudiantes avanzados se sientan a explicarte paso a paso Matemática, Física, Álgebra y materias troncales antes de cada parcial.</p>
+          </article>
+
+          <!-- Tarjeta 2 -->
+          <article class="community-card">
+            <div class="community-card-icon"><i class="fa-solid fa-bus"></i></div>
+            <h3>Gestión de Beneficios y Trámites</h3>
+            <p>Te guiamos con el Boleto Educativo (BEC), becas universitarias, certificados y trámites de autogestión para que no te pierdas en la burocracia.</p>
+          </article>
+
+          <!-- Tarjeta 3 -->
+          <article class="community-card">
+            <div class="community-card-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+            <h3>Acercamiento al Mundo Laboral</h3>
+            <p>Organizamos recorridos técnicos por fábricas y empresas de Córdoba para que veas aplicada tu futura profesión desde los primeros años.</p>
+          </article>
+
+          <!-- Tarjeta 4 -->
+          <article class="community-card">
+            <div class="community-card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+            <h3>Representación y Derechos</h3>
+            <p>Llevamos las inquietudes y problemáticas reales del estudiantado a las mesas de debate y comisiones para garantizar un cursado justo.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Galería de Fotos Reales (Espacios para completar) -->
+      <div class="about-section-block">
+        <div class="section-subtitle-center">
+          <span class="badge-tag tag-purple">Galería</span>
+          <h2>Momentos compartidos</h2>
+          <p>Postales de las visitas técnicas, cursillos de ingreso y actividades en el campus.</p>
+        </div>
+
+        <div class="about-gallery-grid">
+          <!-- Foto 1 -->
+          <div class="gallery-card">
+            <img src="https://lh3.googleusercontent.com/d/1NwkSzMbXabsU25WVxdyOnbrpJ273KdZK" alt="Actividad en la facu" class="gallery-img">
+            <span class="img-caption">Acompañando en jornadas de ingreso</span>
+          </div>
+          <!-- Foto 2 -->
+          <div class="gallery-card">
+            <img src="https://lh3.googleusercontent.com/d/13CRxKG694GbweaMtqusFbKw-KlDqOxfd" alt="Clases y talleres" class="gallery-img">
+            <span class="img-caption">Actividad sustentable, biblioteca circular</span>
+          </div>
+          <!-- Foto 3 -->
+          <div class="gallery-card">
+            <img src="https://lh3.googleusercontent.com/d/1kywmYIR3LGxpfZOharR7I9_u-gtdjulG" alt="Comunidad estudiantil" class="gallery-img">
+            <span class="img-caption">Clases de apoyo de Fisica II</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta para Sumarse -->
+      <div class="join-banner">
+        <div class="join-content">
+          <i class="fa-solid fa-hands-holding-circle join-icon"></i>
+          <div>
+            <h3>¿Te gustaría dar una mano o sumarte?</h3>
+            <p>La Franja la hacemos entre todos. Si querés ayudar a otros ingresantes, dictar una clase de apoyo o sumarte a coordinar actividades, ¡escribinos!</p>
+          </div>
+        </div>
+        <a href="https://forms.gle/j36d5QKVKGJNQfW6A" target="_blank" class="btn-register" style="justify-content: center; background-color: #25d366; color: #ffffff;">
+          <i class="fa-brands fa-whatsapp"></i> Hablar con los chicos
+        </a>
+      </div>
+
+    </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="badge-round">FRC<br>UTN</span>
+        <div>
+          <p class="brand-bold">FRANJA MORADA</p>
+          <span class="brand-sub">Estudiantes con Iniciativa!</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="https://chat.whatsapp.com/JAu2wRPPPGULSFnnuVqtK1" target="_blank" class="footer-btn"><i class="fa-brands fa-whatsapp"></i> PREGUNTERO MORADO</a>
+      </div>
+    </div>
+  </footer>
+<!-- BOTONES FLOTANTES FIJOS (WHATSAPP E INSTAGRAM) -->
+  <div class="floating-social-container">
+    <!-- Botón Instagram -->
+    <a href="https://www.instagram.com/franjamoradafrc?igsi=cndyem5peDl2dmQ2" target="_blank" class="floating-btn btn-ig" aria-label="Seguinos en Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    
+    <!-- Botón WhatsApp -->
+    <a href="https://chat.whatsapp.com/BVRt2sBruLeCX79UuAJuwq" target="_blank" class="floating-btn btn-wa" aria-label="Comunidad de WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

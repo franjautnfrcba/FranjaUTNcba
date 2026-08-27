@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructivo Boleto Educativo Gratuito (BEC) - Franja Morada</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .guide-container {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #702672;
+      font-weight: 600;
+      text-decoration: none;
+      margin-bottom: 24px;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-back:hover {
+      color: #d6249f;
+      transform: translateX(-4px);
+    }
+
+    .guide-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .guide-header {
+      border-bottom: 2px solid #f3f4f6;
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+
+    .guide-badge {
+      display: inline-block;
+      background: #fdf2f8;
+      color: #db2777;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .guide-header h1 {
+      font-size: 2rem;
+      color: #1f2937;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .guide-header p {
+      color: #4b5563;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .info-box {
+      background: #f9fafb;
+      border-left: 4px solid #702672;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin: 20px 0;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      position: relative;
+    }
+
+    .info-box i {
+      font-size: 1.4rem;
+      color: #702672;
+      margin-top: 2px;
+    }
+
+    .info-box-content h4 {
+      font-size: 1.05rem;
+      color: #111827;
+      margin-bottom: 6px;
+    }
+
+    .info-box-content ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #4b5563;
+      line-height: 1.6;
+    }
+
+    .steps-section {
+      margin: 32px 0;
+    }
+
+    .step-item {
+      margin-bottom: 32px;
+    }
+
+    .step-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 10px;
+    }
+
+    .step-number {
+      background: #702672;
+      color: #ffffff;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+
+    .step-desc {
+      color: #4b5563;
+      line-height: 1.6;
+      margin-bottom: 14px;
+      padding-left: 42px;
+    }
+
+    .step-img-box {
+      padding-left: 42px;
+    }
+
+    .step-img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      display: block;
+    }
+
+    .step-img-caption {
+      display: block;
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-top: 6px;
+      font-style: italic;
+    }
+
+    .contact-box {
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .contact-text h4 {
+      color: #065f46;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+
+    .contact-text p {
+      color: #047857;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    .btn-wa-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #10b981;
+      color: #ffffff;
+      font-weight: 700;
+      padding: 12px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-wa-contact:hover {
+      background: #059669;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 640px) {
+      .guide-card {
+        padding: 20px;
+      }
+      .step-desc, .step-img-box {
+        padding-left: 0;
+      }
+      .guide-header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="guide-container">
+    <a href="index.html" class="btn-back">
+      <i class="fa-solid fa-arrow-left"></i> Volver a la página principal
+    </a>
+
+    <article class="guide-card">
+      
+      <header class="guide-header">
+        <span class="guide-badge">Trámites y Beneficios</span>
+        <h1>Instructivo: Boleto Educativo Gratuito (BEC)</h1>
+        <p>
+          El beneficio otorga <strong>dos pasajes diarios</strong> para cualquiera de las empresas de transporte urbano y mantiene su validez durante todo el ciclo lectivo.
+        </p>
+      </header>
+
+      <div class="info-box">
+        <i class="fa-solid fa-circle-check"></i>
+        <div class="info-box-content">
+          <h4>¿Qué necesitas antes de comenzar?</h4>
+          <ul>
+            <li>Tener cuenta de <strong>CiDi (Ciudadano Digital) con Nivel 2</strong> verificado.</li>
+            <li>Tener cargado y confirmado tu <strong>horario definitivo de cursada</strong>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="steps-section">
+        
+        <!-- PASO 1 -->
+        <div class="step-item">
+          <div class="step-title">
+            <span class="step-number">1</span>
+            <span>Denegar datos en Autogestión 4</span>
+          </div>
+          <p class="step-desc">
+            Ingresá al portal de Autogestión 4 de la facultad. En la parte inferior de la pantalla principal, ubicá la sección de <em>Boleto Educativo</em> y presioná sobre el botón <strong>"Denegar"</strong> para restablecer la autorización previa.
+          </p>
+          <div class="step-img-box">
+            <img src="https://lh3.googleusercontent.com/d/1ycpqpDn2DWjKHCyu6NFFrRHnUf5ySJ-_" alt="Paso 1: Denegar datos en Autogestión" class="step-img">
+            <span class="step-img-caption">Paso 1: Vista de Autogestión 4 - Botón Denegar</span>
+          </div>
+        </div>
+
+        <!-- PASO 2 -->
+        <div class="step-item">
+          <div class="step-title">
+            <span class="step-number">2</span>
+            <span>Autorizar nuevamente la información</span>
+          </div>
+          <p class="step-desc">
+            En la misma sección, hacé clic en <strong>"Sí, Autorizo"</strong> para volver a habilitar y actualizar la transferencia de tus datos académicos hacia la provincia.
+          </p>
+          <div class="step-img-box">
+            <img src="https://lh3.googleusercontent.com/d/1ycpqpDn2DWjKHCyu6NFFrRHnUf5ySJ-_" alt="Paso 2: Autorizar nuevamente" class="step-img">
+            <span class="step-img-caption">Paso 2: Confirmación de envío de datos del CUIL</span>
+          </div>
+        </div>
+
+        <!-- PASO 3 -->
+        <div class="step-item">
+          <div class="step-title">
+            <span class="step-number">3</span>
+            <span>Completar el FUP en CiDi</span>
+          </div>
+          <p class="step-desc">
+            Ingresá a tu cuenta de Ciudadano Digital (CiDi), buscá el trámite del <strong>Formulario Único de Postulantes (FUP)</strong> y completá la solicitud para el Boleto Educativo Gratuito con tus datos y trayectos.
+          </p>
+          <div class="step-img-box">
+            <img src="https://lh3.googleusercontent.com/d/1ycpqpDn2DWjKHCyu6NFFrRHnUf5ySJ-_" alt="Paso 3: Formulario FUP en CiDi" class="step-img">
+            <span class="step-img-caption">Paso 3: Acceso al Formulario Único de Postulantes (FUP)</span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Confirmación -->
+      <div class="info-box" style="border-left-color: #10b981; background: #f0fdf4;">
+        <i class="fa-solid fa-envelope-circle-check" style="color: #10b981;"></i>
+        <div class="info-box-content">
+          <h4>Confirmación de inscripción</h4>
+          <p style="color: #374151; margin: 0; font-size: 0.95rem;">
+            Una vez enviado el trámite, deberías recibir en tu casilla de correo un <strong>email de confirmación</strong> indicando que la solicitud se realizó con éxito.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <div class="contact-text">
+          <h4>¿Tenés dudas o problemas con tu trámite?</h4>
+          <p>Consultas oficiales del BEC (Lunes a viernes de 8:00 a 18:00 hs)</p>
+        </div>
+        <a href="https://wa.me/5493512010651" target="_blank" class="btn-wa-contact">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp: 351 201-0651
+        </a>
+      </div>
+
+    </article>
+  </main>
+
+</body>
+</html>
