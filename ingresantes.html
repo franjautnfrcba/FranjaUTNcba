@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía Completa para Ingresantes 2027 - Franja Morada UTN FRC</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .guide-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #702672;
+      font-weight: 600;
+      text-decoration: none;
+      margin-bottom: 24px;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-back:hover {
+      color: #d6249f;
+      transform: translateX(-4px);
+    }
+
+    .guide-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .guide-header {
+      border-bottom: 2px solid #f3f4f6;
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+
+    .guide-badge {
+      display: inline-block;
+      background: #fdf2f8;
+      color: #db2777;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .guide-header h1 {
+      font-size: 2.1rem;
+      color: #1f2937;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+
+    .guide-header p {
+      color: #4b5563;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    /* Cajas Informativas */
+    .info-box {
+      background: #f9fafb;
+      border-left: 4px solid #702672;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin: 20px 0;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .info-box i {
+      font-size: 1.4rem;
+      color: #702672;
+      margin-top: 2px;
+    }
+
+    .info-box-content h4 {
+      font-size: 1.05rem;
+      color: #111827;
+      margin-bottom: 6px;
+    }
+
+    .info-box-content p, .info-box-content ul {
+      margin: 0;
+      color: #4b5563;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .info-box-content ul {
+      padding-left: 18px;
+    }
+
+    .alert-box {
+      background: #fffbeb;
+      border-left: 4px solid #f59e0b;
+    }
+
+    .alert-box i {
+      color: #d97706;
+    }
+
+    .alert-box strong {
+      color: #92400e;
+    }
+
+    .franja-box {
+      background: #faf5ff;
+      border-left: 4px solid #9333ea;
+      padding: 22px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .franja-box h3 {
+      color: #6b21a8;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.15rem;
+    }
+
+    .franja-box p {
+      color: #4c1d95;
+      line-height: 1.65;
+      font-size: 0.98rem;
+      margin: 0;
+    }
+
+    /* Pasos / Instancias */
+    .steps-section {
+      margin: 32px 0;
+    }
+
+    .step-item {
+      margin-bottom: 30px;
+      background: #ffffff;
+      border: 1px solid #f3f4f6;
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+
+    .step-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 12px;
+    }
+
+    .step-number {
+      background: #702672;
+      color: #ffffff;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+
+    .step-desc {
+      color: #4b5563;
+      line-height: 1.65;
+      font-size: 0.95rem;
+    }
+
+    /* Grilla de Botones y Recursos */
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 14px;
+      margin: 24px 0;
+    }
+
+    .resource-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.92rem;
+      color: #ffffff;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .resource-btn:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.08);
+    }
+
+    .btn-drive { background-color: #702672; }
+    .btn-formulas { background-color: #0284c7; }
+    .btn-yt { background-color: #dc2626; }
+    .btn-twitch { background-color: #9146ff; }
+    .btn-wp { background-color: #16a34a; }
+
+    @media (max-width: 640px) {
+      .guide-card {
+        padding: 20px;
+      }
+      .guide-header h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="guide-container">
+    <a href="index.html" class="btn-back">
+      <i class="fa-solid fa-arrow-left"></i> Volver a la página principal
+    </a>
+
+    <article class="guide-card">
+      
+      <header class="guide-header">
+        <span class="guide-badge">Ingreso 2027 • UTN FRC</span>
+        <h1>Todo lo que necesitas saber para ingresar a Ingeniería</h1>
+        <p>
+          Guía integral: fechas de preinscripción, materias a rendir, las 3 instancias oficiales de ingreso, material de estudio y clases de apoyo.
+        </p>
+      </header>
+
+      <div class="info-box">
+        <i class="fa-solid fa-calendar-check"></i>
+        <div class="info-box-content">
+          <h4>Preinscripción 2027</h4>
+          <p>
+            Las preinscripciones oficiales abren a partir del <strong>2 de septiembre de 2026</strong> y permanecen habilitadas hasta <strong>diciembre</strong> (sin fecha fija de cierre definida por el momento). El trámite se realiza de forma 100% online a través de la web oficial de la facultad.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-box alert-box">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <div class="info-box-content">
+          <strong>¡Atención al elegir el turno en la preinscripción!</strong>
+          <p>
+            Al preinscribirte vas a elegir un turno: <strong>Mañana, Tarde o Noche</strong>. Ese turno será tu horario fijo tanto para <strong>rendir los exámenes libres de diciembre</strong> como para <strong>asistir al cursillo presencial de verano</strong> si no apruebas todas las materias en la primera instancia.
+          </p>
+        </div>
+      </div>
+
+      <h2 style="font-size: 1.35rem; color: #1f2937; margin: 28px 0 12px 0;">
+        <i class="fa-solid fa-book-bookmark" style="color: #702672;"></i> ¿Cuáles son las materias del ingreso?
+      </h2>
+      <p style="color: #4b5563; line-height: 1.6;">
+        Para ingresar a cualquier carrera de ingeniería en la UTN Facultad Regional Córdoba tenés que aprobar obligatoriamente las <strong>3 materias</strong>:
+      </p>
+      <ul style="color: #374151; line-height: 1.8; padding-left: 20px; font-weight: 600; margin-bottom: 24px;">
+        <li>Matemática</li>
+        <li>Física</li>
+        <li>Introducción a la Vida Universitaria (IVU)</li>
+      </ul>
+
+      <h2 style="font-size: 1.35rem; color: #1f2937; margin: 32px 0 16px 0;">
+        <i class="fa-solid fa-route" style="color: #702672;"></i> Las 3 Oportunidades para Ingresar
+      </h2>
+
+      <section class="steps-section">
+        
+        <div class="step-item">
+          <div class="step-title">
+            <span class="step-number">1</span>
+            <span>Primera Instancia: Exámenes Libres (Diciembre)</span>
+          </div>
+          <div class="step-desc">
+            <p>
+              Te preparás por tu propia cuenta de manera independiente y vas a la facultad únicamente a rendir el examen presencial.
+            </p>
+            <ul style="padding-left: 20px; margin-top: 8px; line-height: 1.6;">
+              <li>
+                <strong>Cuestionario Virtual Previo (UV):</strong> Se realiza a través de la Universidad Virtual (UV). Tenés una ventana de hasta <strong>48 horas</strong> para completarlo. Sirve para evaluar si contás con los conocimientos mínimos para el examen presencial.
+              </li>
+              <li>
+                <strong>Por materia:</strong> Hacés el cuestionario únicamente de la materia a la que te quieras presentar (Matemática, Física o IVU).
+              </li>
+              <li>
+                <strong>Examen Presencial:</strong> Una vez aprobado el cuestionario virtual, quedás habilitado para asistir a la facultad a rendir el examen presencial.
+              </li>
+              <li>
+                <strong>Flexibilidad:</strong> Podés presentarte a las 3 materias, a 2 o a 1 sola. Si aprobás las 3 materias en diciembre, <em>¡ya estás adentro de la carrera!</em> Las materias que te queden pendientes las rendís en la segunda instancia.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-title">
+            <span class="step-number">2</span>
+            <span>Segunda Instancia: Cursillo Nivelatorio (Enero - Marzo)</span>
+          </div>
+          <div class="step-desc">
+            <p>
+              Cursado presencial en la facultad de lunes a viernes en el turno seleccionado durante la preinscripción:
+            </p>
+            <ul style="padding-left: 20px; margin-top: 8px; line-height: 1.6;">
+              <li>
+                <strong>Clases y Parciales:</strong> Los profesores de la facultad dictan las clases teóricas y prácticas. Se cursa Matemática y se rinde su parcial; luego se cursa Física y se rinde su parcial.
+              </li>
+              <li>
+                <strong>Recuperatorios:</strong> Si no alcanzás la nota de aprobación en el parcial de Matemática o en el de Física, tenés derecho a <strong>un solo recuperatorio</strong> por cada materia.
+              </li>
+              <li>
+                Al aprobar las 3 materias, completás el ingreso y quedás habilitado para inscribirte a cursar primer año de tu ingeniería.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="step-item">
+          <div class="step-title">
+            <span class="step-number">3</span>
+            <span>Tercera Instancia: Exámenes Libres de Julio</span>
+          </div>
+          <div class="step-desc">
+            <p>
+              Instancia extraordinaria de examen libre para rendir la/s materia/s que te hayan quedado pendientes y comenzar a cursar en el segundo semestre.
+            </p>
+            <p style="margin-top: 6px; color: #b45309; font-weight: 600;">
+              <i class="fa-solid fa-circle-exclamation"></i> Requisito excluyente: Esta instancia está reservada ÚNICAMENTE para estudiantes que hayan cursado el Seminario Universitario (2da instancia) y hayan rendido sus respectivos parciales y recuperatorios.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="franja-box">
+        <h3><i class="fa-solid fa-heart-pulse"></i> Acompañamiento de Franja Morada</h3>
+        <p>
+          "En Franja estamos para acompañarte en tus primeros pasos en la facu. Somos estudiantes con ganas de ayudar a otros estudiantes. Por eso ofrecemos clases de apoyo, simulacros de examen y tutorías totalmente gratuitas, para que tu ingreso sea súper agradable. ¡Queremos que empieces esta nueva etapa con confianza y sin dudas!"
+        </p>
+      </div>
+
+      <h2 style="font-size: 1.35rem; color: #1f2937; margin: 30px 0 10px 0;">
+        <i class="fa-solid fa-folder-open" style="color: #702672;"></i> Material de Estudio y Recursos
+      </h2>
+      <p style="color: #4b5563; line-height: 1.6; font-size: 0.95rem;">
+        El contenido de los cuadernillos cambia muy poco de año a año (sólo varían algunos ejercicios puntuales, pero los temas y lo que se evalúa siempre es lo mismo). Podés descargar todo en PDF para imprimirlo por tu cuenta o conseguirlo impreso en la fotocopiadora de la facultad.
+      </p>
+
+      <div class="resources-grid">
+        <a href="https://drive.google.com/drive/folders/14DjcaUqcr-L3iEyiZPZ_9iLpgtD18ep8?usp=drive_link" target="_blank" class="resource-btn btn-drive">
+          <i class="fa-solid fa-folder-open"></i> Carpeta Drive: Parciales y Cuadernillos
+        </a>
+
+        <a href="#" target="_blank" class="resource-btn btn-formulas">
+          <i class="fa-solid fa-square-root-variable"></i> Fórmulas de Matemática y Física
+        </a>
+
+        <a href="https://www.youtube.com/playlist?list=PL4ltBb8n8IgycRpC38yy3FfWPANe1FpgC" target="_blank" class="resource-btn btn-yt">
+          <i class="fa-brands fa-youtube"></i> Clases Virtuales: Matemática
+        </a>
+
+        <a href="https://www.youtube.com/playlist?list=PL4ltBb8n8IgycRpC38yy3FfWPANe1FpgC" target="_blank" class="resource-btn btn-yt">
+          <i class="fa-brands fa-youtube"></i> Clases Virtuales: Física
+        </a>
+
+        <a href="https://www.twitch.tv/franjamoradafrc" target="_blank" class="resource-btn btn-twitch">
+          <i class="fa-brands fa-twitch"></i> Canal de Twitch (Clases Grabadas)
+        </a>
+
+        <a href="https://chat.whatsapp.com/KgpUupHF9ZdC6aFcsK4Im6" target="_blank" class="resource-btn btn-wp">
+          <i class="fa-brands fa-whatsapp"></i> Comunidad de Ingresantes
+        </a>
+      </div>
+
+    </article>
+  </main>
+
+</body>
+</html>
